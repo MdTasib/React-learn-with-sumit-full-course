@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Emoji from "./Components/composition/Emoji";
+import Text from "./Components/composition/Text";
+import Bracket from "./Components/composition/Bracket";
+import ClickCounter from "./Components/HOC/ClickCounter";
+import MouseHoverCount from "./Components/HOC/MouseHoverCount";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ClickCounter />
+      <MouseHoverCount />
+      {/* <Emoji>
+        {({ addEmoji }) => <Text addEmoji={addEmoji} />}
+      </Emoji>
+
+      <Emoji>
+        {({ addEmoji }) => (
+          <Bracket>
+            {({ addBracket }) => <Text addEmoji={addEmoji} addBracket={addBracket} />}
+          </Bracket>
+        )}
+      </Emoji> */}
     </div>
   );
 }
