@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Emoji from "./Components/composition/Emoji";
 import Text from "./Components/composition/Text";
 import Bracket from "./Components/composition/Bracket";
