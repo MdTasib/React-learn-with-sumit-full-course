@@ -8,6 +8,7 @@ import MouseHoverCount from "./Components/Context/MouseHoverCount";
 import User from "./Components/HOC/User";
 import Counter from "./Components/Context/Counter";
 import Section from './Components/Context/Section';
+import ThemeContext from './Components/Context/themeContext';
 
 export default class App extends React.Component {
   state = {
@@ -24,7 +25,7 @@ export default class App extends React.Component {
             <ClickCounter count={counter} incrementCount={incrementCount} />
           )}
         </Counter>
-        <Provider value={}><Section theme={theme} /></Provider>
+        <ThemeContext.Provider value={{ theme: theme }}><Section /></ThemeContext.Provider>
 
 
         {/* <Counter>
