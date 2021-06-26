@@ -12,25 +12,24 @@ import ThemeContext from './Components/Context/themeContext';
 
 export default class App extends React.Component {
   state = {
-    theme: 'dark'
+    theme: 'dark',
+    switchTheme: () => {
+      this.setState(({ theme }) => {
+        if (theme === 'dark') {
+          return {
+            theme: 'light',
+          }
+        }
+        return {
+          theme: 'dark',
+        }
+      })
+    }
   };
 
-  switchTheme = () => {
-    this.setState(({ theme }) => {
-      if (theme === 'dark') {
-        return {
-          theme: 'light',
-        }
-      }
-      return {
-        theme: 'dark',
-      }
-    })
-  }
+
 
   render() {
-    const { theme } = this.state;
-
     return (
       <div className="App">
 
@@ -39,7 +38,7 @@ export default class App extends React.Component {
             <ClickCounter count={counter} incrementCount={incrementCount} />
           )}
         </Counter>
-        <ThemeContext.Provider value={{ theme: theme, switchTheme: this.switchTheme }}><Section /></ThemeContext.Provider>
+        <ThemeContext.Provider value={this.state}><Section /></ThemeContext.Provider>
 
 
         {/* <Counter>

@@ -7,6 +7,7 @@ export default function Content() {
     const context = useContext(ThemeContext);
     const { theme, switchTheme } = context;
 
+    console.log('content render');
     return (
         <div>
             <h2>This is content</h2>
