@@ -9,7 +9,12 @@ export default function Content() {
             <Counter>
                 {
                     (counter, incrementCount) => {
-                        return <ThemeContext.Consumer>{({ theme }) => <MouseHoverCount theme={theme} count={counter} incrementCount={incrementCount} />}</ThemeContext.Consumer>
+                        return <ThemeContext.Consumer>{({ theme, switchTheme }) => <MouseHoverCount
+                            theme={theme}
+                            count={counter}
+                            incrementCount={incrementCount}
+                            switchTheme={switchTheme}
+                        />}</ThemeContext.Consumer>
                     }
                 }
             </Counter>
