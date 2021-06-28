@@ -9,36 +9,42 @@ import User from "./Components/HOC/User";
 import Counter from "./Components/Context/Counter";
 import Section from './Components/Context/Section';
 import ThemeContext from './Components/Context/themeContext';
+import UseState from './Components/HOC/useState/UseState';
 
 export default class App extends React.Component {
-  state = {
-    theme: 'dark',
-    switchTheme: () => {
-      this.setState(({ theme }) => {
-        if (theme === 'dark') {
-          return {
-            theme: 'light',
-          }
-        }
-        return {
-          theme: 'dark',
-        }
-      })
-    }
-  };
+
+  // context
+  // state = {
+  //   theme: 'dark',
+  //   switchTheme: () => {
+  //     this.setState(({ theme }) => {
+  //       if (theme === 'dark') {
+  //         return {
+  //           theme: 'light',
+  //         }
+  //       }
+  //       return {
+  //         theme: 'dark',
+  //       }
+  //     })
+  //   }
+  // };
 
 
 
   render() {
     return (
       <div className="App">
+        <UseState />
 
+        {/* 
+        // context
         <Counter>
           {(counter, incrementCount) => (
             <ClickCounter count={counter} incrementCount={incrementCount} />
           )}
         </Counter>
-        <ThemeContext.Provider value={this.state}><Section /></ThemeContext.Provider>
+        <ThemeContext.Provider value={this.state}><Section /></ThemeContext.Provider> */}
 
 
         {/* <Counter>
