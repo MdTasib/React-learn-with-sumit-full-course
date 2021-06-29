@@ -37,7 +37,7 @@ export default class App extends React.Component {
     return (
       <div className="App">
 
-        <UseEffect />
+        {/* <UseEffect /> */}
 
         {/* <UseState /> */}
 
