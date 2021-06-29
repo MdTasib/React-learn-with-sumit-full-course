@@ -10,6 +10,7 @@ import Counter from "./Components/Context/Counter";
 import Section from './Components/Context/Section';
 import ThemeContext from './Components/Context/themeContext';
 import UseState from './Components/HOC/useState/UseState';
+import UseEffect from './Components/HOC/useEffect/UseEffect';
 
 export default class App extends React.Component {
 
@@ -35,7 +36,10 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <UseState />
+
+        <UseEffect />
+
+        {/* <UseState /> */}
 
         {/* 
         // context
