@@ -11,6 +11,7 @@ import Section from './Components/Context/Section';
 import ThemeContext from './Components/Context/themeContext';
 import UseState from './Components/HOC/useState/UseState';
 import UseEffect from './Components/HOC/useEffect/UseEffect';
+import UseCallBack from './Components/HOC/useCallBack/UseCallBack';
 
 export default class App extends React.Component {
 
@@ -36,6 +37,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <UseCallBack />
 
         {/* <UseEffect /> */}
 
