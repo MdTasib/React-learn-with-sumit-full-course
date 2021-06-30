@@ -12,6 +12,7 @@ import ThemeContext from './Components/Context/themeContext';
 import UseState from './Components/HOC/useState/UseState';
 import UseEffect from './Components/HOC/useEffect/UseEffect';
 import UseCallBack from './Components/HOC/useCallBack/UseCallBack';
+import UseRef from './Components/HOC/useRef/UseRef';
 
 export default class App extends React.Component {
 
@@ -37,7 +38,9 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <UseCallBack />
+        <UseRef />
+
+        {/* <UseCallBack /> */}
 
         {/* <UseEffect /> */}
 
