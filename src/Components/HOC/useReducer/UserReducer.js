@@ -44,7 +44,7 @@ const UserReducer = () => {
             </div> */}
 
             {/* <GetPost /> */}
-            <GetPost2 />
+            {/* <GetPost2 /> */}
         </div>
     );
 };

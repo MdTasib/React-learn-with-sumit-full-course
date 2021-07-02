@@ -14,6 +14,7 @@ import UseEffect from './Components/HOC/useEffect/UseEffect';
 import UseCallBack from './Components/HOC/useCallBack/UseCallBack';
 import UseRef from './Components/HOC/useRef/UseRef';
 import UserReducer from './Components/HOC/useReducer/UserReducer';
+import CustomHook from './Components/HOC/CustomHook/CustomHook';
 
 export default class App extends React.Component {
 
@@ -39,7 +40,10 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <UserReducer />
+
+        <CustomHook />
+
+        {/* <UserReducer /> */}
 
         {/* <UseRef /> */}
 
