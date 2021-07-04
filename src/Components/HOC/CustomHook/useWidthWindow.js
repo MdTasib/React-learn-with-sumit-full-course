@@ -6,6 +6,8 @@ export default function useWidthWindow(screenSize) {
     // const checkScreenSize = () => {
     //     setOnSmallScreen(window.innerWidth < screenSize);
     // }
+
+    // useCallback() hook
     const checkScreenSize = useCallback(() => {
         setOnSmallScreen(window.innerWidth < screenSize);
     }, [screenSize]);
