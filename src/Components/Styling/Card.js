@@ -1,27 +1,29 @@
 import React from 'react';
-import Content from './Content';
-import Tag from './Tag';
 import Button from './Button';
-import Image from './Image';
 import panda from '../../images/panda.png';
+import { CardContainer, ContentContainer, ButtonContainer } from './styles/Container.styles';
+import { Tag, H1, P, Image } from './styles/Elements.styles';
+import { StyledTitle } from './styles/Custom.styles';
 
 const Card = () => {
   return (
-    <div className='card'>
-      <Content>
-        <Tag text='Exclusive' />
-        <h1>React Styled Components</h1>
-        <p>
+    <CardContainer>
+      <ContentContainer>
+        <Tag color='blue'>Exclusive</Tag>
+        <H1>
+          <StyledTitle text='React Styled Components' color='blue' />
+        </H1>
+        <P>
           Exclusive styled Components on React js where i will learn why i
           need this & how to use it.
-        </p>
-        <div className="buttons">
+        </P>
+        <ButtonContainer className="buttons">
           <Button link='#' text='Click Me' />
           <Button link='#' text='Github' />
-        </div>
-      </Content>
-      <Image imgSrc={panda} altTag='panda' width='300px' />
-    </div>
+        </ButtonContainer>
+      </ContentContainer>
+      <Image src={panda} alt='panda' width='300px' />
+    </CardContainer>
   );
 };
 

@@ -1,11 +1,7 @@
-import React from 'react';
-
-const Button = () => {
+export default function Button({ link, text }) {
   return (
-    <div>
-
-    </div>
+    <a href={link} target="_blank" rel="noreferrer">
+      {text}
+    </a>
   );
-};
-
-export default Button;
+}

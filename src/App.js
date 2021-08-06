@@ -16,7 +16,7 @@ import UseRef from './Components/HOC/useRef/UseRef';
 import UserReducer from './Components/HOC/useReducer/UserReducer';
 import CustomHook from './Components/HOC/CustomHook/CustomHook';
 import StyledComponent from './Components/Styling/StyledComponent';
-import './Components/Styling/dark.css';
+import { GlobalStyle } from './Components/Styling/styles/Global.styles';
 
 export default class App extends React.Component {
 
@@ -87,6 +87,7 @@ export default class App extends React.Component {
           )}
         </Emoji> */}
 
+        <GlobalStyle />
         <StyledComponent />
       </div>
     );

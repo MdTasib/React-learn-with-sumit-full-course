@@ -1,6 +1,6 @@
 import React from 'react';
-import Container from './Container';
 import Card from './Card';
+import { Container } from './styles/Container.styles';
 
 const StyledComponent = () => {
   return (
