@@ -15,6 +15,8 @@ import UseCallBack from './Components/HOC/useCallBack/UseCallBack';
 import UseRef from './Components/HOC/useRef/UseRef';
 import UserReducer from './Components/HOC/useReducer/UserReducer';
 import CustomHook from './Components/HOC/CustomHook/CustomHook';
+import StyledComponent from './Components/Styling/StyledComponent';
+import './Components/Styling/dark.css';
 
 export default class App extends React.Component {
 
@@ -84,6 +86,8 @@ export default class App extends React.Component {
             </Bracket>
           )}
         </Emoji> */}
+
+        <StyledComponent />
       </div>
     );
   }
