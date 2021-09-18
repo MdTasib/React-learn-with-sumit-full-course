@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import Emoji from "./Components/composition/Emoji";
-import Text from "./Components/composition/Text";
-import Bracket from "./Components/composition/Bracket";
-import ClickCounter from "./Components/Context/ClickCounter";
-import MouseHoverCount from "./Components/Context/MouseHoverCount";
-import User from "./Components/HOC/User";
-import Counter from "./Components/Context/Counter";
+import Emoji from './Components/composition/Emoji';
+import Text from './Components/composition/Text';
+import Bracket from './Components/composition/Bracket';
+import ClickCounter from './Components/Context/ClickCounter';
+import MouseHoverCount from './Components/Context/MouseHoverCount';
+import User from './Components/HOC/User';
+import Counter from './Components/Context/Counter';
 import Section from './Components/Context/Section';
 import ThemeContext from './Components/Context/themeContext';
 import UseState from './Components/HOC/useState/UseState';
@@ -19,42 +19,39 @@ import StyledComponent from './Components/Styling/StyledComponent';
 import { GlobalStyle } from './Components/Styling/styles/Global.styles';
 
 export default class App extends React.Component {
+	// context
+	// state = {
+	//   theme: 'dark',
+	//   switchTheme: () => {
+	//     this.setState(({ theme }) => {
+	//       if (theme === 'dark') {
+	//         return {
+	//           theme: 'light',
+	//         }
+	//       }
+	//       return {
+	//         theme: 'dark',
+	//       }
+	//     })
+	//   }
+	// };
 
-  // context
-  // state = {
-  //   theme: 'dark',
-  //   switchTheme: () => {
-  //     this.setState(({ theme }) => {
-  //       if (theme === 'dark') {
-  //         return {
-  //           theme: 'light',
-  //         }
-  //       }
-  //       return {
-  //         theme: 'dark',
-  //       }
-  //     })
-  //   }
-  // };
+	render() {
+		return (
+			<div className='App'>
+				{/* <CustomHook /> */}
 
+				{/* <UserReducer /> */}
 
+				{/* <UseRef /> */}
 
-  render() {
-    return (
-      <div className="App">
-        {/* <CustomHook /> */}
+				{/* <UseCallBack /> */}
 
-        {/* <UserReducer /> */}
+				{/* <UseEffect /> */}
 
-        {/* <UseRef /> */}
+				{/* <UseState /> */}
 
-        {/* <UseCallBack /> */}
-
-        {/* <UseEffect /> */}
-
-        {/* <UseState /> */}
-
-        {/* 
+				{/* 
         // context
         <Counter>
           {(counter, incrementCount) => (
@@ -63,8 +60,7 @@ export default class App extends React.Component {
         </Counter>
         <ThemeContext.Provider value={this.state}><Section /></ThemeContext.Provider> */}
 
-
-        {/* <Counter>
+				{/* <Counter>
           {(counter, incrementCount) => (
             <ClickCounter count={counter} incrementCount={incrementCount} />
           )}
@@ -74,8 +70,8 @@ export default class App extends React.Component {
             <MouseHoverCount count={counter} incrementCount={incrementCount} />
           )}
         </Counter> */}
-        {/* <User render={(isLoggedIn) => isLoggedIn ? 'Tasib' : 'Guest'} /> */}
-        {/* <Emoji>
+				{/* <User render={(isLoggedIn) => isLoggedIn ? 'Tasib' : 'Guest'} /> */}
+				{/* <Emoji>
           {({ addEmoji }) => <Text addEmoji={addEmoji} />}
         </Emoji>
   
@@ -87,9 +83,9 @@ export default class App extends React.Component {
           )}
         </Emoji> */}
 
-        <GlobalStyle />
-        <StyledComponent />
-      </div>
-    );
-  }
+				{/* <GlobalStyle /> */}
+				{/* <StyledComponent /> */}
+			</div>
+		);
+	}
 }
