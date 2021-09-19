@@ -17,6 +17,7 @@ import UserReducer from './Components/HOC/useReducer/UserReducer';
 import CustomHook from './Components/HOC/CustomHook/CustomHook';
 import StyledComponent from './Components/Styling/StyledComponent';
 import { GlobalStyle } from './Components/Styling/styles/Global.styles';
+import ReactRouterDom from './Components/ReactRouterDom/ReactRouterDom';
 
 export default class App extends React.Component {
 	// context
@@ -85,6 +86,8 @@ export default class App extends React.Component {
 
 				{/* <GlobalStyle /> */}
 				{/* <StyledComponent /> */}
+
+				<ReactRouterDom />
 			</div>
 		);
 	}
